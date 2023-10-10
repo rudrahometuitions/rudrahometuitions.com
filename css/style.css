@@ -6,9 +6,18 @@ body {
 .layout_padding {
   padding: 75px 0;
 }
+.align-img{
+  margin: auto;
+  width: 50%;
+}
 
 .layout_padding2 {
-  padding: 45px 0;
+  padding: 45px 0px;
+  text-align: center;
+}
+.al-center {
+  display: flex;
+  justify-content: center;
 }
 
 .layout_padding2-top {
@@ -74,7 +83,7 @@ nav.navbar.navbar-expand-lg {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
-  color: #f7f6f7;
+  color: #000;
   text-align: center;
 }
 
@@ -100,7 +109,10 @@ a:focus {
   position: relative;
 }
 
+.register{
+  margin-top: 150px;
 
+}
 
 .top_container::before {
   content: "";
@@ -160,7 +172,7 @@ a:focus {
 .navbar-brand span {
   font-size: 22px;
   font-weight: 700;
-  color: #fefefe;
+  color: #000000;
 }
 
 .custom_nav-container {
@@ -216,6 +228,9 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 35px;
 }
+.admission_detail-box{
+  margin-top: -100px;
+}
 
 
 /* end hero section */
@@ -262,17 +277,23 @@ a:focus {
 /* admission section */
 
 
-.admission_section a {
-  background-color: #fdd31d;
+.btn1 {
+  /* background-color: #6b590d; */
+  background-color: rgb(146, 8, 129);
   color: #fefeff;
 }
+.btn2 {
+  background-color: #6b590d;
+  color: #fefeff;
+}
+
 
 /* end admission section */
 
 /* why section */
 
 .why_section {
-  text-align: right;
+  text-align: left;
 }
 
 .why_section a {
@@ -533,7 +554,10 @@ a:focus {
   width: 35px;
   margin-right: 5px;
 }
-
+.register_text{
+  color: black;
+  margin-bottom: 0px;
+}
 /* end info section */
 
 /* footer section*/
