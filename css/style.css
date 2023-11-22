@@ -135,7 +135,7 @@ a:focus {
   content: "";
   position: absolute;
   width: 75px;
-  height: 20px;
+  height: 0px;
   bottom: 20%;
   left: 6%;
   background-color: #fdd31d;
