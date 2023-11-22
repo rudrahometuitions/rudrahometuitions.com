@@ -113,6 +113,9 @@ a:focus {
   margin-top: 80px;
 
 }
+.site_img{
+  width: 540px
+}
 
 .top_container::before {
   content: "";
