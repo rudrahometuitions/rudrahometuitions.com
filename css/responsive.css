@@ -2,9 +2,7 @@
 
 @media (max-width: 992px) {
 
-    .site_img{
-        width: 350px;
-    }
+    
     .hero-container {
         flex-direction: column;
     }
@@ -32,9 +30,7 @@
 
 @media (max-width: 768px) {
 
-    .site_img{
-        width: 350px;
-    }
+   
     .hero_detail-box {
         text-align: center;
     }
@@ -65,9 +61,7 @@
 
 @media (max-width: 576px) {
     
-    .site_img{
-        width: 3500px;
-    }
+    
     .hero-container {
         padding-bottom: 100px;
     }
