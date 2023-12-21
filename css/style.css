@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #fefeff;
+  background-color: rgb(228, 241, 237);
 }
 /*header section*/
 
@@ -61,13 +61,25 @@ body {
   display: inline-block;
   padding: 15px 45px;
   border-radius: 10px;
+  margin-bottom: 10px;
   font-size: 15px;
   background-color: #ffffff;
   color: white;
   font-weight: 600;
   transition: all 0.3s ease 0s;
 }
-
+.about_detail-box{
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgb(173, 173, 238);
+}
+.why_detail-box{
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgb(173, 173, 238);
+}
 .hero_section .call_to-btn {}
 
 .call_to-btn img {

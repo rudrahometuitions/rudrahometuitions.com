@@ -1,4 +1,6 @@
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+    
+}
 
 @media (max-width: 992px) {
 
@@ -21,9 +23,9 @@
     }
 
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-        color: #000;
+        color: hwb(0 100% 0%);
     }
-
+    
 
 }
 
