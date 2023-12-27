@@ -1,6 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(228, 241, 237);
+  background-color: #9effff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*header section*/
 
@@ -226,6 +229,10 @@ a:focus {
 
 /*end header section*/
 
+
+
+
+
 /* hero section */
 .hero-container {
   display: flex;
@@ -272,8 +279,11 @@ a:focus {
 
 /* common style for some sections */
 .common_style>section {
-  padding: 50px 0;
+  padding: 40px 1px;
 }
+/* .section_style {
+  padding: 50px 15px;
+}  */
 
 .common_style .row {
   align-items: center;
@@ -617,6 +627,58 @@ a:focus {
   color: #fdfdfe;
 }
 
-
-
 /* end footer section*/
+
+/* ---Tuitions---- */
+
+
+.tuition_container{
+  width: auto;
+  height: 500px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+  /* background-color: orange; */
+}
+.boot_card_main{
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* .tuition_cards{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+.boot_card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.card-body{
+  padding: 15px;
+}
+.card{
+  /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  border-radius: 20px;
+  height: 520px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 6px rgb(128, 128, 128);
+}
+.card-title{
+  font-weight: bolder;
+  color: blue;
+}
+.card-title>span{
+  background-color: rgb(0, 169, 78);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+.profile_img{
+  width: 50px;
+}
+/* ----End Tuitions----- */

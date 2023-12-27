@@ -1,10 +1,11 @@
 @media (max-width: 1120px) {
-    
+    .tuition_card_size{
+        height: 600px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
-
-    
     .hero-container {
         flex-direction: column;
     }
@@ -13,32 +14,29 @@
         width: 100%;
         margin-bottom: 45px;
     }
-
     .hero_img-container {
         width: 100%;
     }
-
     .hero-container.container {
         padding-top: 45px;
     }
-
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
         color: hwb(0 100% 0%);
     }
-    
-
+    .tuition_card_size{
+        height: 600px;
+        width: 100%;
+    }
 }
 
 
 @media (max-width: 768px) {
-
-   
     .hero_detail-box {
         text-align: center;
     }
 
     .hero_detail-box h1 {
-        width: 100%;
+        width: 600px
     }
 
     .top_container::after {
@@ -58,7 +56,10 @@
         width: 100%;
         margin: 20px auto;
     }
-
+    /* Tuition card height */
+    .tuition_card_size{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -95,7 +96,24 @@
         animation: afteranimate 1s;
         animation-delay: .1s;
     }
-
+    /* Tuition card height */
+    .tuition_card_size{
+        height: 560px;
+        width: 100%;
+    }
+    .card-title{
+        font-weight:300;
+        color: blue;
+    }
+    .card-title>span{
+        background-color: rgb(0, 169, 78);
+        color: white;
+        padding: 4px;
+        border-radius: 2px;
+    }
+    .profile_img{
+        width: 30px;
+    }
 
     @keyframes beforeanimate {
         0% {

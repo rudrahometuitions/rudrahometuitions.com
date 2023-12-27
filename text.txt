@@ -1,0 +1,27 @@
+            getValues+=`
+            <p><strong>Tuition ID: </strong>${values.id}</p>
+            <p><strong>No of Students: </strong> ${values.no_of_students}</p>
+            <p>Class & Subjects: ${values.class_subjects}</p>
+            <p>:Syllabus Type: ${values.syllabus_type}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>: ${values}</p>
+            <p>Salary${values.salary}</p>
+            <p>---------------------------------------</P>
+            `;
+            document.getElementById('tuitions').innerHTML = getValues;
+
+
+    for (let i = 0; i < object.length; i++) {
+        // Check if the task is incomplete
+        if (!tasks[i]==""; {
+          // Skip the processing for incomplete tasks
+          continue;
+        }
+        // Process the completed task
+        console.log(`Task "${tasks[i].name}" is completed.`);
+      }
