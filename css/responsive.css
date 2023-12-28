@@ -56,6 +56,10 @@
         width: 100%;
         margin: 20px auto;
     }
+    .card-title{
+        font-weight:600;
+        color: blue;
+    }
     /* Tuition card height */
     .tuition_card_size{
         width: 100%;
@@ -102,7 +106,7 @@
         width: 100%;
     }
     .card-title{
-        font-weight:300;
+        font-weight:600;
         color: blue;
     }
     .card-title>span{

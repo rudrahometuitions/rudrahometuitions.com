@@ -14,20 +14,21 @@ fetch(ap)
         let apiLocation = object[i].location;
         let len = apiLocation.slice(0,12);
         let locImg = "";
-        if (object[i].class_subjects== "-"){
+        if (object[i].status== "DEMO"){
             // Skip the processing for incomplete tasks
-            break;
+            continue;
         }
         if(len==locLength){
             // Add image url here for location
             locImg = "images/location_icon.svg";
         }
+        if(object[i].status=='-'){break;}
         getValues+= `
         <div class="col-md-4 crds boot_card">
         <div class="card tuition_card_size">
             <div class="d-flex flex-column justify-content-between card-body">
                 <div>
-                    <h6 class="card-title"><img class="profile_img" src="images/user_icon.svg" alt="">&nbsp;&nbsp;Tuition Id: ${object[i].id} |&nbsp; <span>Status: Active</span> </h6>
+                    <h5 class="card-title"><img class="profile_img" src="images/user_icon.svg" alt="">&nbsp;&nbsp;Tuition Id: ${object[i].id}</b> |&nbsp; <span>Status: Active</span> </h6>
                     <hr style="border: 1px solid green;">
                 </div>
                 <div>

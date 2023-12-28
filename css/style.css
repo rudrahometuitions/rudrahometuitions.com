@@ -670,6 +670,7 @@ a:focus {
 }
 .card-title{
   font-weight: bolder;
+  font-size: larger;
   color: blue;
 }
 .card-title>span{
