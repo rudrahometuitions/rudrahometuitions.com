@@ -7,12 +7,12 @@ fetch(ap)
 })
 .then((object) => {
     let loc = "https://maps.app.goo.gl/vMmC3iwRbCjUJjYL6";
-    locLength = loc.slice(0,12);
+    locLength = loc.slice(0,8);
     let getValues = "";
     for (let i = 0; i <= object.length; i++) {
         // Process the completed task
         let apiLocation = object[i].location;
-        let len = apiLocation.slice(0,12);
+        let len = apiLocation.slice(0,8);
         let locImg = "";
         if (object[i].status== "DEMO"){
             // Skip the processing for incomplete tasks

@@ -334,6 +334,12 @@ a:focus {
   background-color: #6b590d;
   color: #fefeff;
 }
+.btn3 {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  background-color: #00bb19;
+  color: #fefeff;
+}
 
 
 /* end admission section */
