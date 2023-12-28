@@ -680,10 +680,11 @@ a:focus {
   color: blue;
 }
 .card-title>span{
-  background-color: rgb(0, 169, 78);
-  color: white;
+  background-color: rgb(0, 215, 112);
+  color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 6px;
+  box-shadow: 1px 1px 2px black;
 }
 .profile_img{
   width: 50px;
