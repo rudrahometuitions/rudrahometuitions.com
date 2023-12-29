@@ -1,5 +1,5 @@
 
-fetch("https://script.google.com/macros/s/AKfycbwLuspW01hxRgtUgpBm0pOEj6vF4MmbZWDdFIhJ7Ru3E3h7M5TlgWC6L6Ebs8huuXCh/exec")
+fetch("https://script.googleusercontent.com/macros/echo?user_content_key=-mW64KS_b4TVSeV4FC1zHHDJaEJmRsHr3vw3CVnb4u2zKpSvQZk19SxvEhh3C8ku_0aC-t7oTmhh6dXANKu5rAG7Kr7wau9Pm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEsD4JwDHwmmFtZtQ7AJMMe6PcJgyGpFdo3l3HBfj5KbtoPM77ipncd75WSQp5wIbeOTZ9LG8gS_wJTZwJbUdbgJDvZe56FzTtz9Jw9Md8uu&lib=MgTmB846eZWgIVFjRTMT5LSY9ugaVrcMi")
 .then((data)=>{
     console.log('-------------Json--------');
     return data.json();
@@ -41,5 +41,6 @@ fetch("https://script.google.com/macros/s/AKfycbwLuspW01hxRgtUgpBm0pOEj6vF4MmbZW
     }
 })
 .catch((err)=>{
-    console.log(err);
+    console.log("Error: "+ err);
+    document.getElementById('request').innerHTML = err;
 });
