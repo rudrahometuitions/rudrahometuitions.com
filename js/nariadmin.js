@@ -1,15 +1,16 @@
 
-fetch("https://script.googleusercontent.com/macros/echo?user_content_key=-mW64KS_b4TVSeV4FC1zHHDJaEJmRsHr3vw3CVnb4u2zKpSvQZk19SxvEhh3C8ku_0aC-t7oTmhh6dXANKu5rAG7Kr7wau9Pm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnEsD4JwDHwmmFtZtQ7AJMMe6PcJgyGpFdo3l3HBfj5KbtoPM77ipncd75WSQp5wIbeOTZ9LG8gS_wJTZwJbUdbgJDvZe56FzTtz9Jw9Md8uu&lib=MgTmB846eZWgIVFjRTMT5LSY9ugaVrcMi")
+fetch("https://script.google.com/macros/s/AKfycbx9_nBXe-WTzKdHkhkEraRUSmdTAKidMa4tTfN8_5vnd3KPnPTZbkhg3om80oB-ziYV/exec")
 .then((data)=>{
     console.log('-------------Json--------');
     return data.json();
 }).then((object)=>{
+    console.log(object[0]);
     let getData = "";
     for(let i = 0; i<= object.length; i++){
-        if (object[i].tutor_ph_no== ""){
+        if (object[i].tutor_no== "-"){
             // Skip the processing for incomplete tasks
             continue;
-        }if(object[i].tutor_ph_no== "-"){
+        }if(object[i].tutor_no== ""){
             break;
         }
         getData += `
@@ -21,10 +22,10 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=-mW64KS
                     <hr style="border: 1px solid green;">
                 </div>
                 <div style="font-size: 13px;">
-                    <strong>Tutor no: </strong>${object[i].tutor_ph_no}<br>
+                    <strong>Tutor no: </strong>${object[i].tutor_no}<br>
                     <p><strong>Tutor Details</strong> ${object[i].tutor_payment}</p>
-                    <a href="tel:${object[i].tutor_ph_no}" target="_blank" rel="noopener noreferrer" class="btn btn btn-success">call</a>
-                    <a href="https://api.whatsapp.com/send?phone=${object[i].tutor_ph_no}&text=Hello sir" target="_blank" rel="noopener noreferrer"><img style="width: 40px;" src="./images/whatsapp.png" alt="image"></a>
+                    <a href="tel:${object[i].tutor_no}" target="_blank" rel="noopener noreferrer" class="btn btn btn-success">call</a>
+                    <a href="https://api.whatsapp.com/send?phone=${object[i].tutor_no}&text=Hello sir" target="_blank" rel="noopener noreferrer"><img style="width: 40px;" src="./images/whatsapp.png" alt="image"></a>
                 </div>
                 <div style="font-size: 13px;">
                     <hr style="border: 1px solid green;">
@@ -39,8 +40,8 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=-mW64KS
         `;
         document.getElementById('request').innerHTML = getData;
     }
-})
-.catch((err)=>{
-    console.log("Error: "+ err);
-    document.getElementById('request').innerHTML = err;
 });
+// .catch((err)=>{
+//     console.log("Error: "+ err);
+//     document.getElementById('request').innerHTML = err;
+// });
