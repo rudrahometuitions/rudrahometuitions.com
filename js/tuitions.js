@@ -14,7 +14,7 @@ fetch(ap)
         let apiLocation = object[i].location;
         let len = apiLocation.slice(0,8);
         let locImg = "";
-        if (object[i].status== "DEMO"){
+        if (object[i].status== "DEMO"||object[i].status==""){
             // Skip the processing for incomplete tasks
             continue;
         }
