@@ -40,8 +40,8 @@ fetch("https://script.google.com/macros/s/AKfycbx9_nBXe-WTzKdHkhkEraRUSmdTAKidMa
         `;
         document.getElementById('request').innerHTML = getData;
     }
+})
+.catch((err)=>{
+    console.log("Error: "+ err);
+    document.getElementById('request').innerHTML = "Server is busy please try again later";
 });
-// .catch((err)=>{
-//     console.log("Error: "+ err);
-//     document.getElementById('request').innerHTML = err;
-// });
