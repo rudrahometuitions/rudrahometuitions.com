@@ -17,7 +17,7 @@ fetch(ap)
         if (object[i].status== "DEMO"||object[i].status=="CANCELLED"){
             // Skip the processing for incomplete tasks
             continue;
-        }if(object[i].paid == "Yes"){
+        }if(object[i].paid == "Yes" || object[i].status=="ASSIGNED"){
             continue;
         }
         if(len==locLength){
