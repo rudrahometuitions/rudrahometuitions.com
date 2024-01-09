@@ -236,8 +236,8 @@ a:focus {
 /* hero section */
 .hero-container {
   display: flex;
-  padding-top: 90px;
-  padding-bottom: 325px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .hero_detail-box {
@@ -279,7 +279,9 @@ a:focus {
 
 /* common style for some sections */
 .common_style>section {
-  padding: 40px 1px;
+
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 /* .section_style {
   padding: 50px 15px;
