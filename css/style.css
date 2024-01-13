@@ -704,3 +704,13 @@ a:focus {
 
 }
 /* ----Tutor----- */
+
+
+/* Privacy and policy */
+.privacy_policy{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/*End Privacy and policy */
