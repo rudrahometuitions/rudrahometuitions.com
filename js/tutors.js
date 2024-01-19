@@ -8,19 +8,24 @@ fetch(ap)
 .then((object) => {
     let getValues = "";
     for (let i = 0; i <= object.length; i++) {
-        let universalLink = "https://drive.google.com/uc?export=view&id=";
+        // let universalLink = "https://drive.google.com/uc?export=view&id=";
         let picImg = "";
         if(object[i].name=='-'){
             break;
         }
-        if(object[i].profile_pic == ""){
-            // Add image url here for location
-            picImg = "images/user_icon.svg";
-        }else{
-            let picUrl = object[i].profile_pic;
-            let picId = picUrl.slice(33);
-            picImg = universalLink+picId;
+        if(object[i].gender=='Male'){
+            picImg = 'images/user_male.jpg';
+        }if(object[i].gender == 'Female'){
+            picImg = 'images/user_female.jpg';
         }
+        // if(object[i].profile_pic == ""){
+        //     // Add image url here for location
+        //     picImg = "images/user_icon.svg";
+        // }else{
+        //     let picUrl = object[i].profile_pic;
+        //     let picId = picUrl.slice(33);
+        //     picImg = universalLink+picId;
+        // }
         getValues+= `
         <div class="col-md-4 crds boot_card">
         <div class="card tuition_card_size">
@@ -29,6 +34,7 @@ fetch(ap)
                     <h5 class="card-title"><img class="profile_img tutor_pic" src="${picImg}" alt="">&nbsp;&nbsp;${object[i].name} </h6>
                     <hr style="border: 1px solid green;">
                     <strong>Tutor Id: </strong>${object[i].tutor_id}<br>
+                    <strong>Gender: </strong>${object[i].gender}<br>
                     <strong>Description: </strong>${object[i].description}<br>
                     <strong>Experience: </strong>${object[i].experience}<br>
                     <strong>Qualification: </strong>${object[i].qualification}<br>
@@ -47,10 +53,10 @@ fetch(ap)
         </div>
         </div>
          `;
-        document.getElementById('tuitions').innerHTML = getValues;
+        document.getElementById('tutors').innerHTML = getValues;
     }
 })
 .catch((err)=>{
-    document.getElementById('tuitions').innerHTML = "Server is busy please try again later";
+    document.getElementById('tutors').innerHTML = "Server is busy please try again later";
 });
 
