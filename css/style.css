@@ -638,6 +638,17 @@ a:focus {
 
 /* end footer section*/
 
+/* keywords section */
+.keywords{
+  width: auto;
+  height: 300px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+  /* background-color: orange; */
+}
+/* End keywords section */
+
+
 /* ---Tuitions---- */
 
 
